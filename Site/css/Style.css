@@ -2,6 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(16, 16, 20);
+}
+
+@font-face {
+    font-family: 'quantum';
+    src: url('../Fonts/quantum.ttf') format('truetype');
+    }
+    
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'quantum';
 }
 
 
@@ -9,14 +20,15 @@ body {
 
 header {
     width: 100%;
-    background: url('../img/fond\ nav.png') no-repeat center center/cover;
+    /*background: url('../img/fond\ nav.png') no-repeat center center/cover;*/
+    background: rgba(0, 0, 0, 0.3);
     color: white;
     text-align: right;
     padding: 1em;
 }
 
 main {
-    height: 800px;
+    height: 200vh;
 }
 
 /*faire en sorte que le header reste sticky avec un 
@@ -106,7 +118,7 @@ footer {
 }
 
 footer img {
-    width: 36%;
+    width: 54%;
     height: auto;
     padding: 40px;
     float: left;
@@ -190,7 +202,7 @@ footer ul {
         height: auto;
         padding: 20px;
         float: left;
-        margin-left: 25%;
+        margin-left: 24%;
     }
 
     footer ul {
@@ -274,6 +286,10 @@ footer ul {
 
 /*************************Main**************************************/
 
+main{
+    height: 1800px;
+}
+
 .imgTop{
     background-image: url('../img/cyberpunk-2077-ville.jpg');
     background-size: cover;
@@ -287,22 +303,56 @@ footer ul {
     color: white;
     font-size: 4vh;
     text-align: center;
+    height: 60vh;
     padding-top: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .separation ul{
     text-align: center;
     width: 100%;
     padding: 0;
+    margin: 0;
+    height: 4vh;
+    padding-top: 1%;
 }
 
 .separation li{
     display: inline;
-    margin: 0 10px;
+    margin: 0 40px;
     color: white;
     font-size: 2vh;
 }
 
 .separation{
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(54, 54, 54);
+}
+
+.elemUnivers{
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    color: white;
+}
+
+.elemUniversGauche{
+    width: 50%;
+    float: left;
+}
+
+.elemUniversGauche img{
+    width: 90%;
+    margin-left: -66px;
+}
+
+.elemUniversGauche h2{
+    width: 80%;
+    font-size: 2.8vh;
+    text-align: right;
+    padding: 10% 0  6% 0;
+}
+
+.elemUniversDroite{
+    width: 50%;
+    float: right;
 }

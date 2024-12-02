@@ -27,10 +27,6 @@ header {
     padding: 1em;
 }
 
-main {
-    height: 200vh;
-}
-
 /*faire en sorte que le header reste sticky avec un 
 dégradé en transparence quand il y a un scroll*/
 
@@ -349,10 +345,20 @@ main{
     width: 80%;
     font-size: 2.8vh;
     text-align: right;
-    padding: 10% 0  6% 0;
+    padding: 22% 0  6% 0;
 }
 
 .elemUniversDroite{
     width: 50%;
     float: right;
+}
+
+.elemUniversDroite img{
+    padding-top: 100px;
+    width: 70%;
+    margin-left: 66px;
+}
+
+.elemUniversDroite > h4, p{
+    
 }

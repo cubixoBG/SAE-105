@@ -91,9 +91,7 @@ header a:hover {
 
 /*************************FOOTER**************************************/
 
-footer {
-    position: absolute;
-    bottom: 0;
+footer {    
     width: 100%;
     background: url('../img/fond\ footer.png') no-repeat center center/cover;
     color: white;
@@ -276,3 +274,35 @@ footer ul {
 
 /*************************Main**************************************/
 
+.imgTop{
+    background-image: url('../img/cyberpunk-2077-ville.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.titre{
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.separation ul{
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+.separation li{
+    display: inline;
+    margin: 0 10px;
+    color: white;
+    font-size: 2vh;
+}
+
+.separation{
+    background-color: rgb(29, 29, 29);
+}

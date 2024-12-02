@@ -6,6 +6,7 @@ body {
 
 
 /*************************NAV BAR**************************************/
+
 header {
     width: 100%;
     background: url('../img/fond\ nav.png') no-repeat center center/cover;
@@ -19,9 +20,7 @@ main {
 }
 
 /*faire en sorte que le header reste sticky avec un 
-dégradé en transparence quand il y a un scroll  (demander au prof si on peut 
-faire du script)
-*/
+dégradé en transparence quand il y a un scroll*/
 
 header {
     position: fixed;
@@ -193,7 +192,7 @@ footer ul {
         height: auto;
         padding: 20px;
         float: left;
-        margin-left: 22%;
+        margin-left: 25%;
     }
 
     footer ul {

@@ -523,20 +523,20 @@ button:hover{
 
 /**Top page**/
 
-.topPage h2{
+.titreTop h2{
     color: white;
     width: 50%;
+    margin-left: 4%;
 }
 
 .titreTop{
     color: white;
     font-size: 3.4vh;
-    text-align: center;
     padding-top: 17%;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.topPage{
+.topPageU{
     background-image: url('../img/Univers.jpg');
     background-size: cover;
     margin: 0;
@@ -650,3 +650,14 @@ button:hover{
 
 /*************************Page NightCity**************************************/
 
+/**Top page**/
+
+.topPageNC{
+    background-image: url('../img/nightcity.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+}

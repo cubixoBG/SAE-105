@@ -24,6 +24,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'quantum';
 }
 
+h2, h3, h4, h5, h6 {
+    color: #FCEE0A;
+}
+
+span{
+    color: #FCEE0A;
+}
+
 
 /*************************NAV BAR**************************************/
 
@@ -40,6 +48,7 @@ header {
 dégradé en transparence quand il y a un scroll*/
 
 header {
+    z-index: 1;
     position: fixed;
     transition: 0.4s;
     top: 0;
@@ -319,6 +328,10 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.titre h4{
+    color: white;
+}
+
 /**Séparation**/
 
 .separation ul{
@@ -359,6 +372,11 @@ main{
 .elemUniversGauche img{
     width: 90%;
     margin-left: -66px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.elemUniversGauche img:hover{
+    transform: scale(0.96);
 }
 
 .elemUniversGauche h2{
@@ -377,6 +395,11 @@ main{
     padding-top: 100px;
     width: 70%;
     margin-left: 66px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.elemUniversDroite img:hover{
+    transform: scale(0.96);
 }
 
 .elemUniversDroite > h4, .elemUniversDroite > p{
@@ -397,14 +420,86 @@ main{
     color: white;
     font-size: 2vh;
     text-align: center;
-    padding-top: 8%;
+    padding-top: 10%;
+    padding-bottom: 1.6%;
 }
 
+.NCimg img{
+    width: 86%;
+    margin-left: 7%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.NCimg img:hover{
+    z-index: 100;
+    transform: scale(0.96);
+}
+
+.NCimg{
+    width: 100%;
+    height: 100vh;
+}
+
+.NCtexte{
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 4%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.NCtexte h4, .NCtexte p{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 2vh;
+}
+
+.elemNC button{
+    margin-left: -1%;
+}
+
+/**Elems personnages**/
+
+.elemP{
+    padding-top: 10%;
+    padding-bottom: 6%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;;
+}
+
+.imgPerso{
+    margin-left: auto;
+}
+
+.imgPerso img{
+    width: 16%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    padding-bottom: 2%;
+    margin-left: 8%;
+}
+
+.imgPerso img:hover{
+    transform: scale(0.96);
+}
+
+.Ptexte{
+    width: 50%;
+    margin-left: 25%;
+    font-size: 2vh;
+    color: white;
+}
+
+.elemP button{
+    margin-left: 69%;
+}
 
 /**Boutons**/
 
 button{
-    width: 20%;
+    width: 120px;
     height: 5vh;
     margin-left: 50%;
     margin-top: 60px;

@@ -1,8 +1,17 @@
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+
 body {
+    display : table;
+	width: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(16, 16, 20);
+    position: relative;
+    height: 5000px;
 }
 
 @font-face {
@@ -100,6 +109,10 @@ header a:hover {
 /*************************FOOTER**************************************/
 
 footer {    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background: url('../img/fond\ footer.png') no-repeat center center/cover;
     color: white;
@@ -282,6 +295,8 @@ footer ul {
 
 /*************************Main**************************************/
 
+/**illustration top page**/
+
 main{
     height: 1800px;
 }
@@ -304,6 +319,8 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/**Séparation**/
+
 .separation ul{
     text-align: center;
     width: 100%;
@@ -324,11 +341,14 @@ main{
     background-color: rgb(54, 54, 54);
 }
 
+/**Univers**/
+
 .elemUnivers{
     display: flex;
     width: 70%;
     margin-left: 15%;
     color: white;
+    flex-wrap: wrap;
 }
 
 .elemUniversGauche{
@@ -359,6 +379,49 @@ main{
     margin-left: 66px;
 }
 
-.elemUniversDroite > h4, p{
-    
+.elemUniversDroite > h4, .elemUniversDroite > p{
+    width: 80%;
+    margin-left: 14%;
+    font-size: 2vh;
+}
+
+.elemUniversGauche > h4, .elemUniversGauche > p{
+    width: 90%;
+    margin-left: -6%;
+    font-size: 2vh;
+}
+
+/**Elems night city**/
+
+.NCtitre{
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    padding-top: 8%;
+}
+
+
+/**Boutons**/
+
+button{
+    width: 20%;
+    height: 5vh;
+    margin-left: 50%;
+    margin-top: 60px;
+    background-color: #FCEE0A;
+    border: none;
+    border-radius: 12px;
+    font-size: 2vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    background-color: #FCEE0A;
+    color: black;
+    transform: scale(1.1);   
 }

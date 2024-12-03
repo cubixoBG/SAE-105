@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 }
 
+main{
+    display: contents;
+}
+
 @font-face {
     font-family: 'quantum';
     src: url('../Fonts/quantum.ttf') format('truetype');
@@ -644,3 +648,4 @@ button:hover{
 }
 
 /*************************Page NightCity**************************************/
+

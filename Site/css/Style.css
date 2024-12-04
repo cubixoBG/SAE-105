@@ -701,3 +701,68 @@ button:hover {
 
 /**Formulaire**/
 
+form {
+    width: 46%;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    font-size: 1.6vh;
+}
+
+legend{
+    font-size: 2.8vh;
+}
+
+fieldset {
+    color: #FCEE0A;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 4%;
+}
+
+fieldset fieldset{
+    margin-top: 8%;
+    padding: 6%;
+}
+
+label {
+    width: 50%;
+    display: flex;
+    padding: 2%;
+}
+
+input, textarea, select {
+    width: 50%;
+}
+
+textarea {
+    height: 8vh;
+    width: 60%;
+}
+
+#submit {
+    width: 14%;
+    height: 4vh;
+    background-color: #FCEE0A;
+    border: none;
+    border-radius: 12px;
+    font-size: 2vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+#submit:hover {
+    background-color: #FCEE0A;
+    color: white;
+    transform: scale(1.1);
+}
+
+form div{
+    display: flex;
+    width: 100%;
+    padding: 4% 4% 0 6%;
+}
+
+window.scroll{
+    top: 100;
+    left: 100;
+    behavior: "smooth";
+  }

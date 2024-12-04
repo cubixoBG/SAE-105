@@ -1,35 +1,46 @@
-html, body {
-	height: 100%;
-	margin: 0; 
+html,
+body {
+    height: 100%;
+    margin: 0;
     padding: 0;
 }
 
 body {
-	width: 100%;
+    width: 100%;
     font-family: Arial, sans-serif;
     background-color: rgb(16, 16, 20);
     min-height: 100vh;
 }
 
-main{
+main {
     display: contents;
 }
 
+/*Style d'écriture de la page*/
 @font-face {
     font-family: 'quantum';
     src: url('../Fonts/quantum.ttf') format('truetype');
-    }
-    
+}
 
-h1, h2, h3, h4, h5, h6 {
+/*Style quantum ajouté à tous les titres*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'quantum';
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #FCEE0A;
 }
 
-span{
+span {
     color: #FCEE0A;
 }
 
@@ -37,33 +48,30 @@ span{
 /*************************NAV BAR**************************************/
 
 header {
+    display: flex;
     width: 100%;
-    /*background: url('../img/fond\ nav.png') no-repeat center center/cover;*/
     background: rgba(0, 0, 0, 0.3);
     color: white;
     text-align: right;
     padding: 1em;
-}
-
-/*faire en sorte que le header reste sticky avec un 
-dégradé en transparence quand il y a un scroll*/
-
-header {
     z-index: 1;
     position: fixed;
-    transition: 0.4s;
     top: 0;
-}
-
-header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header img {
     max-width: 100%;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; 
+    /*Transition qui dure 0.5s en ease-in-out (l'animation) qui 
+    s'applique sur la balise transform */
+}
+
+header img:hover {
+    transform: scale(0.92);
+    /*balise transforme par rapprot à la transition
+    qui "zoom" de 0.92 soit un zoom inversé de 8%*/
 }
 
 #logo {
@@ -73,9 +81,6 @@ header img {
     margin-left: 40px;
 }
 
-header img:hover {
-    transform: scale(0.92);
-}
 
 header ul {
     margin-right: 100px;
@@ -102,6 +107,8 @@ header a:hover {
     color: #FCEE0A;
 }
 
+/*animation qui place un élèment d'une hauteur de 2px
+avec une animation qui dure 0.3s sous les texte de page du menu*/
 #menuNav::after {
     content: '';
     display: inline-block;
@@ -109,9 +116,13 @@ header a:hover {
     height: 2px;
     background: #FCEE0A;
     transform: scale(0);
+    /*scale 0 car il ne s'affiche pas toute suite*/
     transition: transform 0.3s ease-in-out;
+    /*même transition que pour l'image plus tôt*/
 }
 
+/*affichage de l'animation (soulignage progréssif) 
+au passage de la souris par dessus*/
 #menuNav:hover::after {
     transform: scale(1);
 }
@@ -175,6 +186,7 @@ footer ul {
     padding: 10px;
 }
 
+/*Exactement la même animation que pour le menu de la nav*/
 #footerPages li::after {
     content: '';
     display: inline-block;
@@ -262,51 +274,27 @@ footer ul {
         padding: 10px;
     }
 
-    #footerPages li::after {
-        content: '';
-        display: inline-block;
-        width: 100%;
-        height: 2px;
-        background: #FCEE0A;
-        transform: scale(0);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    #footerPages li:hover::after {
-        transform: scale(1);
-    }
-
     #footerPages li {
         color: white;
         text-decoration: none;
         margin-top: 20px;
         width: auto;
     }
-
-    footer img:hover {
-        transform: scale(0.92);
-    }
-
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 }
 
 /*************************Responsive header menu burger**************************************/
 
-
+/*A faire*/
 
 /*************************Main**************************************/
 
 /**illustration top page**/
 
-main{
+main {
     height: 1800px;
 }
 
-.imgTop{
+.imgTop {
     background-image: url('../img/cyberpunk-2077-ville.jpg');
     background-size: cover;
     margin: 0;
@@ -315,7 +303,7 @@ main{
     height: 100vh;
 }
 
-.titre{
+.titre {
     color: white;
     font-size: 4vh;
     text-align: center;
@@ -324,13 +312,13 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.titre h4{
+.titre h4 {
     color: white;
 }
 
 /**Séparation**/
 
-.separation ul{
+.separation ul {
     text-align: center;
     width: 100%;
     padding: 0;
@@ -339,20 +327,20 @@ main{
     padding-top: 1%;
 }
 
-.separation li{
+.separation li {
     display: inline;
     margin: 0 40px;
     color: white;
     font-size: 2vh;
 }
 
-.separation{
+.separation {
     background-color: rgb(54, 54, 54);
 }
 
 /**Univers**/
 
-.elemUnivers{
+.elemUnivers {
     display: flex;
     width: 70%;
     margin-left: 15%;
@@ -361,51 +349,53 @@ main{
     flex-wrap: wrap;
 }
 
-.elemUniversGauche{
+.elemUniversGauche {
     width: 50%;
     float: left;
 }
 
-.elemUniversGauche img{
+.elemUniversGauche img {
     width: 90%;
     margin-left: -66px;
     transition: transform 0.5s ease-in-out;
 }
 
-.elemUniversGauche img:hover{
+.elemUniversGauche img:hover {
     transform: scale(0.96);
 }
 
-.elemUniversGauche h2{
+.elemUniversGauche h2 {
     width: 80%;
     font-size: 2.8vh;
     text-align: right;
-    padding: 22% 0  6% 0;
+    padding: 22% 0 6% 0;
 }
 
-.elemUniversDroite{
+.elemUniversDroite {
     width: 50%;
     float: right;
 }
 
-.elemUniversDroite img{
+.elemUniversDroite img {
     padding-top: 100px;
     width: 74%;
     margin-left: 66px;
     transition: transform 0.5s ease-in-out;
 }
 
-.elemUniversDroite img:hover{
+.elemUniversDroite img:hover {
     transform: scale(0.96);
 }
 
-.elemUniversDroite > h4, .elemUniversDroite > p{
+.elemUniversDroite>h4,
+.elemUniversDroite>p {
     width: 80%;
     margin-left: 14%;
     font-size: 2vh;
 }
 
-.elemUniversGauche > h4, .elemUniversGauche > p{
+.elemUniversGauche>h4,
+.elemUniversGauche>p {
     width: 90%;
     margin-left: -6%;
     font-size: 2vh;
@@ -413,7 +403,7 @@ main{
 
 /**Elems night city**/
 
-.NCtitre{
+.NCtitre {
     color: white;
     font-size: 2vh;
     text-align: center;
@@ -421,23 +411,23 @@ main{
     padding-bottom: 1.6%;
 }
 
-.NCimg img{
+.NCimg img {
     width: 86%;
     transition: transform 0.5s ease-in-out;
 }
 
-.NCimg img:hover{
+.NCimg img:hover {
     z-index: 100;
     transform: scale(0.96);
 }
 
-.NCimg{
+.NCimg {
     text-align: center;
     width: 100%;
     height: 100vh;
 }
 
-.NCtexte{
+.NCtexte {
     color: white;
     font-size: 2vh;
     text-align: center;
@@ -446,56 +436,57 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.NCtexte h4, .NCtexte p{
+.NCtexte h4,
+.NCtexte p {
     width: 70%;
     margin-left: 15%;
     font-size: 2vh;
 }
 
-.elemNC button{
+.elemNC button {
     margin-left: -1%;
 }
 
 /**Elems personnages**/
 
-.elemP{
+.elemP {
     padding-top: 10%;
     padding-bottom: 6%;
     display: flex;
     width: 100%;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
 }
 
-.imgPerso{
+.imgPerso {
     width: 100%;
     text-align: center;
 }
 
-.imgPerso img{
+.imgPerso img {
     width: 16%;
     height: auto;
     transition: transform 0.5s ease-in-out;
     padding: 2%;
 }
 
-.imgPerso img:hover{
+.imgPerso img:hover {
     transform: scale(0.96);
 }
 
-.Ptexte{
+.Ptexte {
     width: 50%;
     margin-left: 25%;
     font-size: 2vh;
     color: white;
 }
 
-.elemP button{
+.elemP button {
     margin-left: 69%;
 }
 
 /**Boutons**/
 
-button{
+button {
     width: 120px;
     height: 5vh;
     margin-left: 50%;
@@ -507,15 +498,15 @@ button{
     transition: transform 0.5s ease-in-out;
 }
 
-button a{
+button a {
     text-decoration: none;
     color: white;
 }
 
-button:hover{
+button:hover {
     background-color: #FCEE0A;
     color: black;
-    transform: scale(1.1);   
+    transform: scale(1.1);
 }
 
 
@@ -523,20 +514,20 @@ button:hover{
 
 /**Top page**/
 
-.titreTop h2{
+.titreTop h2 {
     color: white;
     width: 50%;
     margin-left: 4%;
 }
 
-.titreTop{
+.titreTop {
     color: white;
     font-size: 3.4vh;
     padding-top: 17%;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.topPageU{
+.topPageU {
     background-image: url('../img/Univers.jpg');
     background-size: cover;
     margin: 0;
@@ -547,7 +538,7 @@ button:hover{
 
 /**paragraphe 1**/
 
-.elemU1{
+.elemU1 {
     width: 70%;
     color: white;
     flex-wrap: wrap;
@@ -556,23 +547,24 @@ button:hover{
     padding-bottom: 8%;
 }
 
-.elemU1 img{
+.elemU1 img {
     width: 52%;
     float: left;
     transition: transform 0.5s ease-in-out;
     padding: 2%;
 }
 
-.elemU1 img:hover{
+.elemU1 img:hover {
     transform: scale(0.96);
 }
 
-.elemU1 h3, .elemU1 p{
+.elemU1 h3,
+.elemU1 p {
     font-size: 2.2vh;
     text-align: left;
 }
 
-.elemU1 div{
+.elemU1 div {
     width: 38%;
     float: left;
     padding: 2%;
@@ -581,7 +573,7 @@ button:hover{
 
 /**paragraphe 2**/
 
-.elemU2{
+.elemU2 {
     display: inline-block;
     padding-top: 4%;
     width: 70%;
@@ -590,23 +582,24 @@ button:hover{
     margin-left: 13%;
 }
 
-.elemU2 img{
+.elemU2 img {
     width: 52%;
     float: left;
     transition: transform 0.5s ease-in-out;
     padding: 2%;
 }
 
-.elemU2 img:hover{
+.elemU2 img:hover {
     transform: scale(0.96);
 }
 
-.elemU2 h3, .elemU2 p{
+.elemU2 h3,
+.elemU2 p {
     font-size: 2.2vh;
     text-align: right;
 }
 
-.elemU2 div{
+.elemU2 div {
     width: 38%;
     float: left;
     padding: 2%;
@@ -615,7 +608,7 @@ button:hover{
 
 /**paragraphe 3**/
 
-.elemU3{
+.elemU3 {
     display: inline-block;
     padding-top: 4%;
     width: 70%;
@@ -625,23 +618,24 @@ button:hover{
     padding-bottom: 10%;
 }
 
-.elemU3 img{
+.elemU3 img {
     width: 52%;
     float: left;
     transition: transform 0.5s ease-in-out;
     padding: 2%;
 }
 
-.elemU3 img:hover{
+.elemU3 img:hover {
     transform: scale(0.96);
 }
 
-.elemU3 h3, .elemU3 p{
+.elemU3 h3,
+.elemU3 p {
     font-size: 2.2vh;
     text-align: left;
 }
 
-.elemU3 div{
+.elemU3 div {
     width: 38%;
     float: left;
     padding: 2%;
@@ -652,7 +646,7 @@ button:hover{
 
 /**Top page**/
 
-.topPageNC{
+.topPageNC {
     background-image: url('../img/nightcity.jpg');
     background-position: center;
     background-size: cover;
@@ -664,7 +658,7 @@ button:hover{
 
 /**paragraphe 1**/
 
-.elemNC1{
+.elemNC1 {
     width: 70%;
     color: white;
     flex-wrap: wrap;
@@ -673,18 +667,19 @@ button:hover{
     margin-left: 14%;
 }
 
-.elemNC1 img{
+.elemNC1 img {
     width: 100%;
     float: left;
     transition: transform 0.5s ease-in-out;
     padding-bottom: 4%;
 }
 
-.elemNC1 img:hover{
+.elemNC1 img:hover {
     transform: scale(0.96);
 }
 
-.elemNC1 h3, .elemNC1 p{
+.elemNC1 h3,
+.elemNC1 p {
     width: 80%;
     font-size: 2.2vh;
     text-align: left;
@@ -695,7 +690,7 @@ button:hover{
 
 /**Top page**/
 
-.topPageP{
+.topPageP {
     background-image: url('../img/personnages.jpg');
     background-size: cover;
     margin: 0;

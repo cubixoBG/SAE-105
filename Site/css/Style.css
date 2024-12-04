@@ -1,3 +1,5 @@
+/**Joyeux Noël**/
+
 html,
 body {
     height: 100%;
@@ -63,7 +65,7 @@ header {
 
 header img {
     max-width: 100%;
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.5s ease-in-out;
     /*Transition qui dure 0.5s en ease-in-out (l'animation) qui 
     s'applique sur la balise transform */
 }
@@ -699,3 +701,18 @@ button:hover {
     height: 50vh;
 }
 
+
+/*************************Page Contact**************************************/
+
+/**Top page**/
+
+.topPageC {
+    background-image: url('../img/contact.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+/**Formulaire**/

@@ -607,8 +607,8 @@ button:hover {
 .elemU3 {
     display: inline-block;
     width: 70%;
-    flex-wrap: wrap;
     padding-bottom: 8%;
+    flex-wrap: wrap;
 }
 
 .elemU3 img {
@@ -782,6 +782,7 @@ fieldset {
     color: #FCEE0A;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 4%;
+    border-radius: 8px;
 }
 
 fieldset fieldset{
@@ -797,6 +798,7 @@ label {
 
 input, textarea, select {
     width: 50%;
+    border-radius: 8px;
 }
 
 textarea {

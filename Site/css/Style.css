@@ -283,6 +283,23 @@ footer ul {
 
 /*A faire*/
 
+
+/*************************Flexible**************************************/
+
+.flex-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-left{
+    width: 30%;
+}
+
+.flex-right{
+    width: 70%;
+}
+
 /*************************Main**************************************/
 
 /**illustration top page**/
@@ -685,6 +702,66 @@ button:hover {
     height: 50vh;
 }
 
+/**paragraphe type 1**/
+
+.espaceT{
+    padding-top: 8%;
+}
+
+.perso1{
+    display: flex;
+    max-width: 70%;
+    width: 60%;
+    flex-wrap: wrap;
+    padding-bottom: 2.8%;
+    flex-direction: row;
+    align-items: end;
+}
+
+.perso1 img {
+    width: 80%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.perso1 img:hover {
+    transform: scale(0.96);
+}
+
+.perso1 h3, .perso1 p {
+    width: 90%;
+    font-size: 2vh;
+    text-align: left;
+    margin-left: 10%;
+}
+
+/**paragraphe type 2**/
+
+.perso2{
+    display: flex;
+    max-width: 70%;
+    width: 60%;
+    flex-wrap: wrap;
+    padding-bottom: 2.8%;
+    flex-direction: row;
+    align-items: end;
+}
+
+.perso2 img {
+    width: 80%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.perso2 img:hover {
+    transform: scale(0.96);
+}
+
+.perso2 h3, .perso2 p {
+    width: 90%;
+    font-size: 2vh;
+    text-align: right;
+    margin-left: 10%;
+}
+
 
 /*************************Page Contact**************************************/
 
@@ -739,6 +816,7 @@ textarea {
     width: 60%;
 }
 
+/*Bouton d'envoi du formulaire*/
 #submit {
     width: 14%;
     height: 4vh;
@@ -761,8 +839,4 @@ form div{
     padding: 4% 4% 0 6%;
 }
 
-window.scroll{
-    top: 100;
-    left: 100;
-    behavior: "smooth";
-  }
+/*modif les autres pages avec le flex center*/

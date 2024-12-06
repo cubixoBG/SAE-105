@@ -397,12 +397,12 @@ h1 {
 .elemUnivers {
     display: flex;
     justify-content: space-between;
-    min-width: 600px;
     max-width: 70%;
     flex-wrap: wrap;
 }
 
 .elemUniversGauche {
+    min-width: 400px;
     width: 44%;
     float: left;
     display: flex;

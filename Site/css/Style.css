@@ -888,7 +888,7 @@ fieldset fieldset {
     animation: revealT linear 1s;
     animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
     animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 4s0%; /*Fin de l'animation*/
+    animation-range-end: contain 40%; /*Fin de l'animation*/
 }
 
 fieldset img {
@@ -947,3 +947,4 @@ form div {
     width: 100%;
     padding: 4% 4% 0 6%;
 }
+

@@ -41,14 +41,15 @@
         <!--Une séparation entre le titre de haut de page et les autres élèments de la page avec des liens cliquable-->
         <div class="separation">
             <ul>
-                <li>Univers</li>
-                <li>NightCity</li>
-                <li>Personnages</li>
+                <!--Les liens qui renvoient sur les différentes parties de l'Index "scroll auto"-->
+                <li><a href="#UniversScroll">Univers</a></li>
+                <li><a href="#NCScroll">NightCity</a></li>
+                <li><a href="#PersoScroll">Personnages</a></li>
             </ul>
         </div>
         <!--Les éléments de la page qui introduisent aux pages du site, pour ici la page Univers-->
         <div class="flex-center">
-            <div class="elemUnivers">
+            <div class="elemUnivers" id="UniversScroll">
                 <div class="elemUniversGauche flex-center">
                     <h2>UN UNIVERS FUTURISTE QUI CLAQUE</h2>
                     <!--1ere image-->
@@ -78,7 +79,7 @@
             </div>
         </div>
         <!--Pour ici introduction à la page NightCity-->
-        <div class="elemNC">
+        <div class="elemNC" id="NCScroll">
             <div class="NCtitre">
                 <h2>NIGHTCITY, LÀ OÙ LE CRIME NE DORT JAMAIS</h2>
             </div>
@@ -107,7 +108,7 @@
             </div>
         </div>
         <!--Pour ici introduction à la page Personnage-->
-        <div class="elemP">
+        <div class="elemP" id="PersoScroll">
             <div class="imgPerso">
                 <!--Les images des personnages-->
                 <img src="img/V.png" alt="photo de profil du personnage V">

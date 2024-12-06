@@ -538,6 +538,7 @@ button:hover {
     color: white;
     width: 50%;
     margin-left: 4%;
+    animation: reveal linear 2s;
 }
 
 .titreTop {

@@ -10,7 +10,7 @@ body {
 
 body {
     width: 100%;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
     background-color: rgb(16, 16, 20);
     min-height: 100vh;
     color: white;
@@ -81,7 +81,8 @@ header img:hover {
     width: 16%;
     height: auto;
     float: left;
-    margin-left: 40px;
+    margin-left: 4%;
+    align-items: center;
 }
 
 
@@ -312,10 +313,12 @@ footer ul {
 }
 
 .titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 2vw;
     text-align: center;
-    height: 61vh;
-    padding-top: 20%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -349,13 +352,21 @@ il passe d'une opacité nulle jusqu'à une opacité de 1 donc pleine*/
         transform: scale(1);
     }
 }
+
 /*durée de l'animation 2s en linéair et l'animation 
 est "reveal"*/
-.titre h4, h1{
+.titre h4,
+h1 {
     animation: reveal linear 2s;
 }
 
 /**Séparation**/
+
+.separation {
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    align-items: center;
+}
 
 .separation ul {
     text-align: center;
@@ -372,12 +383,6 @@ est "reveal"*/
     font-size: 1vw;
 }
 
-.separation {
-    background-color: rgb(54, 54, 54);
-    display: flex;
-    align-items: center;
-}
-
 .separation a {
     color: white;
     text-decoration: none;
@@ -390,7 +395,10 @@ est "reveal"*/
 /**Univers**/
 
 .elemUnivers {
-    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 600px;
+    max-width: 70%;
     flex-wrap: wrap;
 }
 
@@ -417,9 +425,12 @@ est "reveal"*/
     text-align: right;
     padding: 22% 0 6% 0;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 60%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 60%;
+    /*Fin de l'animation*/
 }
 
 .elemUniversDroite {
@@ -454,11 +465,17 @@ est "reveal"*/
     padding-left: 12%;
 }
 
-.elemUniversDroite>h4, .elemUniversDroite>p, .elemUniversGauche>h4, .elemUniversGauche>p {
+.elemUniversDroite>h4,
+.elemUniversDroite>p,
+.elemUniversGauche>h4,
+.elemUniversGauche>p {
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 6%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 6%;
+    /*Fin de l'animation*/
 }
 
 /**Elems night city**/
@@ -469,9 +486,12 @@ est "reveal"*/
     padding-top: 10%;
     padding-bottom: 1.6%;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 70%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 70%;
+    /*Fin de l'animation*/
 }
 
 .NCimg img {
@@ -490,7 +510,7 @@ est "reveal"*/
     height: 100vh;
 }
 
-.elemNC .flex-center{
+.elemNC .flex-center {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -509,9 +529,12 @@ est "reveal"*/
     width: 100%;
     font-size: 2vh;
     animation: revealT linear 2s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 40%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 40%;
+    /*Fin de l'animation*/
 }
 
 /**Elems personnages**/
@@ -546,9 +569,12 @@ est "reveal"*/
     width: 60%;
     font-size: 2vh;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 20%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 20%;
+    /*Fin de l'animation*/
 }
 
 /**Boutons**/
@@ -582,14 +608,17 @@ button:hover {
 
 .titreTop h2 {
     color: white;
-    width: 50%;
+    width: 40%;
     margin-left: 4%;
+    font-size: 4.4vh;
     animation: reveal linear 2s;
 }
 
 .titreTop {
-    font-size: 3.4vh;
-    padding-top: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -628,9 +657,12 @@ button:hover {
     font-size: 2.2vh;
     text-align: left;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 30%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 30%;
+    /*Fin de l'animation*/
 }
 
 .elemU1 div {
@@ -664,9 +696,12 @@ button:hover {
     font-size: 2.2vh;
     text-align: right;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 30%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 30%;
+    /*Fin de l'animation*/
 }
 
 .elemU2 div {
@@ -701,9 +736,12 @@ button:hover {
     font-size: 2.2vh;
     text-align: left;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 30%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 30%;
+    /*Fin de l'animation*/
 }
 
 .elemU3 div {
@@ -759,9 +797,12 @@ button:hover {
     font-size: 2.2vh;
     text-align: left;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 8%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 8%;
+    /*Fin de l'animation*/
 }
 
 /*************************Page Personnages**************************************/
@@ -809,9 +850,12 @@ button:hover {
     text-align: left;
     margin-left: 10%;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 30%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 30%;
+    /*Fin de l'animation*/
 }
 
 /**paragraphe type 2**/
@@ -842,11 +886,13 @@ button:hover {
     text-align: right;
     margin-left: 10%;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 30%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 30%;
+    /*Fin de l'animation*/
 }
-
 
 /*************************Page Contact**************************************/
 
@@ -888,9 +934,12 @@ fieldset fieldset {
     display: flex;
     align-items: center;
     animation: revealT linear 1s;
-    animation-timeline: view(); /*Fait apparaitre par rapport au scroll*/
-    animation-range-start: cover 0%; /*Début de l'animation*/
-    animation-range-end: contain 40%; /*Fin de l'animation*/
+    animation-timeline: view();
+    /*Fait apparaitre par rapport au scroll*/
+    animation-range-start: cover 0%;
+    /*Début de l'animation*/
+    animation-range-end: contain 40%;
+    /*Fin de l'animation*/
 }
 
 fieldset img {

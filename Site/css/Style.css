@@ -111,6 +111,7 @@ header a:hover {
 
 /*animation qui place un élèment d'une hauteur de 2px
 avec une animation qui dure 0.3s sous les texte de page du menu*/
+/*animation découvertes sur le web en cherchant un scroll auto*/
 #menuNav::after {
     content: '';
     display: inline-block;
@@ -947,4 +948,3 @@ form div {
     width: 100%;
     padding: 4% 4% 0 6%;
 }
-

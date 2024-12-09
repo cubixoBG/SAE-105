@@ -22,11 +22,11 @@
         <!--le menu des différentes pages-->
         <div class="menu">
             <ul>
-                <li id="menuNav"><a href="Index.html">Accueil</a></li>
-                <li id="menuNav"><a href="Univers.html">Univers</a></li>
-                <li id="menuNav"><a href="NightCity.html">NightCity</a></li>
-                <li id="menuNav"><a href="Personnage.html">Personnages</a></li>
-                <li id="menuNav"><a href="Contact.html">Contact</a></li>
+            <li id="menuNav"><a href="Index.php">Accueil</a></li>
+                <li id="menuNav"><a href="Univers.php">Univers</a></li>
+                <li id="menuNav"><a href="NightCity.php">NightCity</a></li>
+                <li id="menuNav"><a href="Personnage.php">Personnages</a></li>
+                <li id="menuNav"><a href="Contact.php">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -39,7 +39,7 @@
         </div>
         <!--Formulaire de contact-->
         <div class="flex-center">
-            <form action="#">
+            <form action="Php/form.php" method= "POST">
                 <fieldset>
                     <!--Titre du formulaire-->
                     <legend>Formulaire de contact</legend>
@@ -67,8 +67,8 @@
                     <!--Question de sécurité-->
                     <fieldset>
                         <legend>Sécurité : </legend>
-                        <label for="Semestre"><img src="img/captchat.png" alt="captchat"></label>
-                        <select name="semestre" id="semestre" required>
+                        <label for="security"><img src="img/captchat.png" alt="captchat"></label>
+                        <select name="security" id="security" required>
                             <option value="0">Sélectionnez la bonne réponse</option>
                             <option value="1">8</option>
                             <option value="2">22</option>

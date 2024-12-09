@@ -22,11 +22,11 @@
         <!--le menu des différentes pages-->
         <div class="menu">
             <ul>
-                <li id="menuNav"><a href="Index.html">Accueil</a></li>
-                <li id="menuNav"><a href="Univers.html">Univers</a></li>
-                <li id="menuNav"><a href="NightCity.html">NightCity</a></li>
-                <li id="menuNav"><a href="Personnage.html">Personnages</a></li>
-                <li id="menuNav"><a href="Contact.html">Contact</a></li>
+                <li id="menuNav"><a href="Index.php">Accueil</a></li>
+                <li id="menuNav"><a href="Univers.php">Univers</a></li>
+                <li id="menuNav"><a href="NightCity.php">NightCity</a></li>
+                <li id="menuNav"><a href="Personnage.php">Personnages</a></li>
+                <li id="menuNav"><a href="Contact.php">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -76,7 +76,7 @@
                         peur sont omniprésentes, et la vie quotidienne est un combat permanent pour la survie.</p>
 
                 </div>
-                <img src="img/pauvreté.jpg" alt="Image d'illustration">
+                <img src="img/pauvrete.jpg" alt="Image d'illustration">
             </div>
         </div>
         <!--Troisième élèment de la page Univers avec image, titre et texte-->

@@ -22,11 +22,11 @@
         <!--le menu des différentes pages-->
         <div class="menu">
             <ul>
-                <li id="menuNav"><a href="Index.html">Accueil</a></li>
-                <li id="menuNav"><a href="Univers.html">Univers</a></li>
-                <li id="menuNav"><a href="NightCity.html">NightCity</a></li>
-                <li id="menuNav"><a href="Personnage.html">Personnages</a></li>
-                <li id="menuNav"><a href="Contact.html">Contact</a></li>
+            <li id="menuNav"><a href="Index.php">Accueil</a></li>
+                <li id="menuNav"><a href="Univers.php">Univers</a></li>
+                <li id="menuNav"><a href="NightCity.php">NightCity</a></li>
+                <li id="menuNav"><a href="Personnage.php">Personnages</a></li>
+                <li id="menuNav"><a href="Contact.php">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -53,7 +53,7 @@
                 <div class="elemUniversGauche flex-center">
                     <h2>UN UNIVERS FUTURISTE QUI CLAQUE</h2>
                     <!--1ere image-->
-                    <img src="/img/Cyberpunk_voiture_volante.webp" alt="Image d'illustration style cyberpunk">
+                    <img src="img/voiture.jpg" alt="Image d'illustration style cyberpunk">
                     <!--Le texte 1ere image (gauche)-->
                     <h4>Ce monde Cyberpunk</h4>
                     <p>L'histoire de Cyberpunk 2077 prend place sur Terre en 2077 et se déroule dans la mégapole
@@ -67,7 +67,7 @@
                 </div>
                 <div class="elemUniversDroite flex-center">
                     <!--2eme image-->
-                    <img src="/img/techno_cyberpunk.png" alt="Image d'illustration style cyberpunk">
+                    <img src="img/techno_cyberpunk.png" alt="Image d'illustration style cyberpunk">
                     <!--Le texte 2eme image (droite)-->
                     <h4>Des technologies révolutionnaires</h4>
                     <p>Dans cet univers, certains usages de la technologie se sont démocratisés, notamment les

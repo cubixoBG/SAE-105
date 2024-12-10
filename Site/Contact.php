@@ -58,7 +58,7 @@
                     </p>
                     <p>
                         <label for="tel">Numéro de téléphone :</label>
-                        <input type="number" id="tel" name="tel" placeholder="06 12 34 56 78" required>
+                        <input type="tel" id="tel" name="tel" placeholder="06 12 34 56 78" required>
                     </p>
                     <p>
                         <label for="message">Message :</label>

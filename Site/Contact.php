@@ -58,7 +58,7 @@
                     </p>
                     <p>
                         <label for="tel">Numéro de téléphone :</label>
-                        <input type="tel" id="tel" name="tel" placeholder="06 12 34 56 78" required>
+                        <input type="tel" id="tel" name="tel" placeholder="06 12 34 56 78" pattern="^0[67][0-9]{8}$" required>
                     </p>
                     <p>
                         <label for="message">Message :</label>

@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire</title>
-    <link rel="stylesheet" href="../css/Style.css">
-    <link rel="icon" type="image/png" href="../img/favicon.ico">
-</head>
-
-<body>
-    <main>
-        <div class="formPage">
             <!--Traitement du formulaire-->
             <?php
             //Vérification de la réponse à la question de sécurité
             if ($_POST["security"] == 7) {
+                header("Refresh: 3; url=../Contact.php"); 
                 //si la question de sécurité est bien répondu, on enregistre les informations dans un fichier
                 $tab["nom"] = $_POST["nom"];
                 $tab["prenom"] = $_POST["prenom"];
@@ -26,7 +13,7 @@
                 $fichier = fopen("info.txt", "a+");
                 fwrite($fichier, $savetab);
                 fclose($fichier);
-                echo "\n <h2>Votre message a bien été envoyé</h2>";
+                
             } else {
                 //si la question de sécurité est mal répondu, on affiche un message d'erreur 
                 echo "\n <h2>La réponse à la question de sécurité est incorrecte</h2>";
@@ -34,10 +21,12 @@
                 header("Refresh: 3; url=../Contact.php"); 
                 return;
             }
-            ?>
-            <button><a href="../Contact.php">Retour</a></button>
-        </div>
-    </main>
-</body>
-
-</html>
+            
+            
+//probleme avec la possibilité d'enlever  le required dans le code
+//retour en arrière possible après envoi, avec toutes les infos gardées donc possibilité de spam
+//faire redirection directement après l'envoi des infos
+//auto évaluation pas tout remplis
+?>
+            
+            

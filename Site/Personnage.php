@@ -17,12 +17,12 @@
     <header>
         <!--le logo-->
         <div id="logo">
-            <a href="Index.html"><img src="img/Cyberpunk_2077_logo.svg.png" alt="logo"></a>
+            <a href="index.php"><img src="img/Cyberpunk_2077_logo.svg.png" alt="logo"></a>
         </div>
         <!--le menu des différentes pages-->
         <div class="menu">
             <ul>
-            <li id="menuNav"><a href="Index.php">Accueil</a></li>
+            <li id="menuNav"><a href="index.php">Accueil</a></li>
                 <li id="menuNav"><a href="Univers.php">Univers</a></li>
                 <li id="menuNav"><a href="NightCity.php">NightCity</a></li>
                 <li id="menuNav"><a href="Personnage.php">Personnages</a></li>
@@ -107,7 +107,7 @@
         <div class="flex-center">
             <div class="perso1">
                 <div class="flex-left flex-center">
-                    <img src="img/Victor_Vektor.webp" alt="Image d'illustration">
+                    <img src="img/victor_vektor.webp" alt="Image d'illustration">
                 </div>
                 <div class="flex-right">
                     <h3>Victor Vektor</h3>
@@ -166,7 +166,7 @@
                         Cyberpunk 2077, qui a inspiré de nombreux mercenaires et aventuriers à suivre ses traces.</p>
                 </div>
                 <div class="flex-left flex-center">
-                    <img src="img/Rogue_Amendiares.webp" alt="Image d'illustration">
+                    <img src="img/Rogue_amendiares.webp" alt="Image d'illustration">
                 </div>
             </div>
         </div>
@@ -194,16 +194,16 @@
             <!--Logo fans le footer à gauche-->
             <div class="flex-center">
                 <div id="imgFooter">
-                    <a href="Index.html"><img src="img/Cyberpunk_2077_logo.svg.png" alt="image logo"></a>
+                    <a href="index.php"><img src="img/Cyberpunk_2077_logo.svg.png" alt="image logo"></a>
                 </div>
             </div>
             <!--Menu dans le footer à droite-->
             <div id="footerPages">
                 <ul>
-                    <li><a href="Univers.html">Univers</a></li>
-                    <li><a href="NightCity.html">NightCity</a></li>
-                    <li><a href="Personnage.html">Personnage</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Univers.php">Univers</a></li>
+                    <li><a href="NightCity.php">NightCity</a></li>
+                    <li><a href="Personnage.php">Personnage</a></li>
+                    <li><a href="Contact.php">Contact</a></li>
                 </ul>
             </div>
         </div>

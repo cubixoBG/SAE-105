@@ -22,7 +22,7 @@
         <!--le menu des différentes pages-->
         <div class="menu">
             <ul>
-            <li id="menuNav"><a href="index.php">Accueil</a></li>
+                <li id="menuNav"><a href="index.php">Accueil</a></li>
                 <li id="menuNav"><a href="Univers.php">Univers</a></li>
                 <li id="menuNav"><a href="NightCity.php">NightCity</a></li>
                 <li id="menuNav"><a href="Personnage.php">Personnages</a></li>
@@ -185,7 +185,7 @@
                         protéger les habitants de Night City.</p>
                 </div>
             </div>
-        </div>  
+        </div>
 
     </main>
     <!--Footer avec logo à gauche et menu à droite-->

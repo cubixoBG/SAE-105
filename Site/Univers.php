@@ -99,7 +99,7 @@
 
     </main>
     <!--Footer avec logo à gauche et menu à droite-->
-   <footer>
+    <footer>
         <div class="container">
             <!--Logo fans le footer à gauche-->
             <div class="flex-center">

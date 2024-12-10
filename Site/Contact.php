@@ -22,7 +22,7 @@
         <!--le menu des différentes pages-->
         <div class="menu">
             <ul>
-            <li id="menuNav"><a href="index.php">Accueil</a></li>
+                <li id="menuNav"><a href="index.php">Accueil</a></li>
                 <li id="menuNav"><a href="Univers.php">Univers</a></li>
                 <li id="menuNav"><a href="NightCity.php">NightCity</a></li>
                 <li id="menuNav"><a href="Personnage.php">Personnages</a></li>
@@ -39,7 +39,7 @@
         </div>
         <!--Formulaire de contact-->
         <div class="flex-center">
-            <form action="Php/form.php" method= "POST">
+            <form action="Php/form.php" method="POST">
                 <fieldset>
                     <!--Titre du formulaire-->
                     <legend>Formulaire de contact</legend>

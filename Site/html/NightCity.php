@@ -17,12 +17,12 @@
     <header>
         <!--le logo-->
         <div id="logo">
-            <a href="index.php"><img src="img/Cyberpunk_2077_logo.svg.png" alt="logo"></a>
+            <a href="../index.php"><img src="img/Cyberpunk_2077_logo.svg.png" alt="logo"></a>
         </div>
         <!--le menu des différentes pages-->
         <div class="menu">
             <ul>
-                <li id="menuNav"><a href="index.php">Accueil</a></li>
+                <li id="menuNav"><a href="../index.php">Accueil</a></li>
                 <li id="menuNav"><a href="Univers.php">Univers</a></li>
                 <li id="menuNav"><a href="NightCity.php">NightCity</a></li>
                 <li id="menuNav"><a href="Personnage.php">Personnages</a></li>
@@ -97,10 +97,10 @@
             <!--Menu dans le footer à droite-->
             <div id="footerPages">
                 <ul>
-                    <li><a href="Univers.php">Univers</a></li>
-                    <li><a href="NightCity.php">NightCity</a></li>
-                    <li><a href="Personnage.php">Personnage</a></li>
-                    <li><a href="Contact.php">Contact</a></li>
+                    <li><a href="../html/Univers.php">Univers</a></li>
+                    <li><a href="../html/NightCity.php">NightCity</a></li>
+                    <li><a href="../html/Personnage.php">Personnage</a></li>
+                    <li><a href="../html/Contact.php">Contact</a></li>
                 </ul>
             </div>
         </div>

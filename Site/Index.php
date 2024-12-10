@@ -23,10 +23,10 @@
         <div class="menu">
             <ul>
                 <li id="menuNav"><a href="index.php">Accueil</a></li>
-                <li id="menuNav"><a href="Univers.php">Univers</a></li>
-                <li id="menuNav"><a href="NightCity.php">NightCity</a></li>
-                <li id="menuNav"><a href="Personnage.php">Personnages</a></li>
-                <li id="menuNav"><a href="Contact.php">Contact</a></li>
+                <li id="menuNav"><a href="html/Univers.php">Univers</a></li>
+                <li id="menuNav"><a href="html/NightCity.php">NightCity</a></li>
+                <li id="menuNav"><a href="html/Personnage.php">Personnages</a></li>
+                <li id="menuNav"><a href="html/Contact.php">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -147,10 +147,10 @@
             <!--Menu dans le footer à droite-->
             <div id="footerPages">
                 <ul>
-                    <li><a href="Univers.php">Univers</a></li>
-                    <li><a href="NightCity.php">NightCity</a></li>
-                    <li><a href="Personnage.php">Personnage</a></li>
-                    <li><a href="Contact.php">Contact</a></li>
+                    <li><a href="html/Univers.php">Univers</a></li>
+                    <li><a href="html/NightCity.php">NightCity</a></li>
+                    <li><a href="html/Personnage.php">Personnage</a></li>
+                    <li><a href="html/Contact.php">Contact</a></li>
                 </ul>
             </div>
         </div>

@@ -39,7 +39,7 @@
         </div>
         <!--Formulaire de contact-->
         <div class="flex-center">
-            <form action="Php/form.php" method="POST">
+            <form action="php/form.php" method="POST">
                 <fieldset>
                     <!--Titre du formulaire-->
                     <legend>Formulaire de contact</legend>

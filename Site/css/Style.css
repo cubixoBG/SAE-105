@@ -23,7 +23,7 @@ main {
 /*Style d'écriture de la page*/
 @font-face {
     font-family: 'quantum';
-    src: url('../Fonts/quantum.ttf') format('truetype');
+    src: url('../fonts/quantum.ttf') format('truetype');
 }
 
 /*Style quantum ajouté à tous les titres*/
